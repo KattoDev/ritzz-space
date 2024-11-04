@@ -1,0 +1,10 @@
+:root {
+  --alert: yellow;
+  --text: #342e56;
+  --background: #f8eed8;
+  --primary: #614063;
+  --secondary: #b5b3c2;
+  --accent: #928fa8;
+
+  --menu-height: 60px;
+}

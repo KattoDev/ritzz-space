@@ -1,0 +1,120 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import 'colors.css';
+@import '/src/assets/css/homePage.css';
+@import '/src/assets/css/aboutPage.css';
+@import '/src/assets/css/NotFoundPage.css';
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+main h1 {
+  font-size: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  overflow: hidden;
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: 450px;
+  color: white;
+}
+
+.container img {
+  width: 200px;
+}
+
+.divider {
+  color: var(--alert);
+}
+
+#space {
+  /* ---------------------------------------------------- */
+  /* ----------- aplicar imagen como mosaico ----------- */
+  width: 100dvw;
+  height: 100dvh;
+  background-image: url('/src/assets/images/space.gif');
+  /* ---------------------------------------------------- */
+  /* ---------------------------------------------------- */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#space #intro {
+  height: 150px;
+}
+
+#space #info {
+  display: flex;
+}
+
+#space #info span {
+  font-weight: bold;
+}
+
+#space #door {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#space #keys {
+  display: flex;
+  gap: 10px;
+}
+
+#space #image {
+  width: 250px;
+  border-radius: 100%;
+}
+
+#space .column .status {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#space .column .status h6 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#space .column .status svg {
+  width: 20px;
+}
+
+#space .column #intro p {
+  margin-top: 10px;
+}
+
+#space .column #info {
+  padding: 5px 0;
+}
+
+#space .column h6 {
+  margin-top: 10px;
+  font-size: 10px;
+}

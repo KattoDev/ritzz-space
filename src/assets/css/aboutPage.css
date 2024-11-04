@@ -1,0 +1,60 @@
+#about {
+  margin-top: 20px;
+  background-color: transparent;
+  gap: 40px;
+  width: calc(100dvw - 200px);
+  box-shadow: 1px 1px 10px rgb(155, 154, 154);
+}
+
+#about .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .col-left-60 {
+  width: 60%;
+}
+
+#about .col-right-40 {
+  width: 40%;
+}
+
+#about .column img {
+  width: 200px;
+  border-radius: 100%;
+  border: 2px solid var(--accent);
+}
+
+#about .journey {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .info {
+  width: 80%;
+  padding: 20px;
+  border-radius: 0 100px 0 0;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+#about .contact {
+  margin-top: 60px;
+  background-color: var(--secondary);
+}
+
+#about .contact img {
+  width: 20px;
+}
+
+#about .contact li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  font-size: 15px;
+  height: 20px;
+}
