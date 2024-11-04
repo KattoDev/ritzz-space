@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="module" src="home_files/client.js"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="http://localhost:5173/public/icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+  <style type="text/css" data-vite-dev-id="/home/katto/development/ritzz-space/src/assets/main.css">
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+  font-family: 'Itim';
+  box-sizing: border-box;
+}/* HTML5 display-role reset for older browsers */article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}body {
+  line-height: 1;
+}ol,
+ul {
+  list-style: none;
+}blockquote,
+q {
+  quotes: none;
+}blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}:root {
+  --alert: yellow;
+  --text: #342e56;
+  --background: #f8eed8;
+  --primary: #614063;
+  --secondary: #b5b3c2;
+  --accent: #928fa8;
+
+  --menu-height: 60px;
+}#home {
+  width: 100dvw;
+  display: block;
+}hr {
+  width: 95%;
+}#home .row .column .message {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}#home .row {
+  background-color: transparent;
+  border-radius: 0;
+}#home .row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}#home .row .column .contact {
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+  height: 150px;
+  background-color: var(--accent);
+  border-radius: 10px 100px 10px 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rebeccapurple;
+}#home .row .column .contact .row {
+  width: 100%;
+}#home .row .column .contact .col-left-30 {
+  width: 30%;
+}#home .row .column .contact .col-right-70 {
+  width: 70%;
+}#home .contact button {
+  margin: 5px 10px;
+  padding: 5px 15px;
+  border: none;
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 20px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}#home .contact button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}#home .row .column .contact img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}#home .row .column img {
+  height: calc(100dvh - 90px);
+  width: 500px;
+  border-radius: 20px;
+}#about {
+  margin-top: 20px;
+  background-color: transparent;
+  gap: 40px;
+  width: calc(100dvw - 200px);
+  box-shadow: 1px 1px 10px rgb(155, 154, 154);
+}#about .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}#about .col-left-60 {
+  width: 60%;
+}#about .col-right-40 {
+  width: 40%;
+}#about .column img {
+  width: 200px;
+  border-radius: 100%;
+  border: 2px solid var(--accent);
+}#about .journey {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}#about .info {
+  width: 80%;
+  padding: 20px;
+  border-radius: 0 100px 0 0;
+  background-color: var(--primary);
+  color: var(--secondary);
+}#about .contact {
+  margin-top: 60px;
+  background-color: var(--secondary);
+}#about .contact img {
+  width: 20px;
+}#about .contact li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  font-size: 15px;
+  height: 20px;
+}.error {
+  border: 1px solid black;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}.error p strong {
+  font-size: 80px;
+  font-weight: bold;
+}.error p {
+  font-size: 40px;
+}body {
+  background-color: var(--background);
+  color: var(--text);
+}main h1 {
+  font-size: 40px;
+}main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}.row {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}.column {
+  overflow: hidden;
+  width: 50%;
+  overflow-wrap: break-word;
+}.container {
+  width: 450px;
+  color: white;
+}.container img {
+  width: 200px;
+}.divider {
+  color: var(--alert);
+}#space {
+  /* ---------------------------------------------------- */
+  /* ----------- aplicar imagen como mosaico ----------- */
+  width: 100dvw;
+  height: 100dvh;
+  background-image: url('/src/assets/images/space.gif');
+  /* ---------------------------------------------------- */
+  /* ---------------------------------------------------- */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}#space #intro {
+  height: 150px;
+}#space #info {
+  display: flex;
+}#space #info span {
+  font-weight: bold;
+}#space #door {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}#space #keys {
+  display: flex;
+  gap: 10px;
+}#space #image {
+  width: 250px;
+  border-radius: 100%;
+}#space .column .status {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}#space .column .status h6 {
+  font-size: 20px;
+  margin: 0;
+}#space .column .status svg {
+  width: 20px;
+}#space .column #intro p {
+  margin-top: 10px;
+}#space .column #info {
+  padding: 5px 0;
+}#space .column h6 {
+  margin-top: 10px;
+  font-size: 10px;
+}
+</style><style type="text/css" data-vite-dev-id="/home/katto/development/ritzz-space/src/components/PageHeader.vue?vue&amp;type=style&amp;index=0&amp;scoped=628430e3&amp;lang.css">
+menu[data-v-628430e3] {
+  height: var(--menu-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+menu #menu-left[data-v-628430e3] {
+  position: absolute;
+  left: 2%;
+}
+menu #menu-right[data-v-628430e3] {
+  position: absolute;
+  right: 2%;
+}
+menu a[data-v-628430e3] {
+  color: var(--text);
+  text-decoration: none;
+}
+menu a h1[data-v-628430e3] {
+  font-size: 30px;
+}
+menu ul[data-v-628430e3] {
+  display: flex;
+}
+menu ul li[data-v-628430e3] {
+  display: inline;
+  height: var(--menu-height);
+  position: relative;
+}
+menu ul li a[data-v-628430e3] {
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10px;
+}
+menu ul li svg[data-v-628430e3] {
+  width: 20px;
+  rotate: 0deg;
+  transition: rotate 0.3s ease-in-out;
+}
+menu ul li a[data-v-628430e3]:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+menu ul li a:hover svg[data-v-628430e3] {
+  rotate: 90deg;
+}
+menu #sub-menu[data-v-628430e3] {
+  background-color: var(--background);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    top 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+menu #sub-menu li a[data-v-628430e3] {
+  height: var(--menu-height);
+  align-items: center;
+}
+menu li:hover #sub-menu[data-v-628430e3] {
+  opacity: 1;
+  pointer-events: all;
+  top: var(--menu-height);
+}
+/* menu {
+  height: 60px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-size: 30px;
+}
+
+hr {
+  margin: 0;
+}
+menu ul {
+  display: flex;
+  gap: 5px;
+}
+
+menu ul svg {
+  width: 20px;
+  rotate: 0deg;
+  transition: rotate 0.3s ease-in-out;
+}
+
+menu ul li {
+  display: flex;
+  background-color: var(--background);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  height: 60px;
+}
+
+menu ul li a {
+  text-decoration: none;
+}
+menu h1 {
+  transform: translate(50%);
+}
+
+menu ul li:hover {
+  background-color: var(--primary);
+}
+menu ul li:hover a {
+  color: var(--background);
+}
+
+menu ul li:hover svg {
+  rotate: 90deg;
+}
+
+menu #menu-right {
+  margin-left: 20px;
+}
+menu #menu-left {
+  margin-right: 20px;
+} */
+</style></head>
+  <body>
+    <div id="app" data-v-app=""><header><menu data-v-628430e3=""><ul data-v-628430e3="" id="menu-left"><li data-v-628430e3=""><a data-v-628430e3="" href="http://localhost:5173/about">about</a></li></ul><a data-v-628430e3="" href="http://localhost:5173/home"><h1 data-v-628430e3="">RitzzRiver</h1></a><ul data-v-628430e3="" id="menu-right"><li data-v-628430e3=""><a data-v-628430e3="" href="http://localhost:5173/gallery">my works</a></li><li data-v-628430e3=""><a data-v-628430e3="" href="#">commisions <svg data-v-628430e3="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path data-v-628430e3="" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></a><ul data-v-628430e3="" id="sub-menu"><li data-v-628430e3=""><a data-v-628430e3="" href="#">Status: open</a></li><li data-v-628430e3=""><a data-v-628430e3="" href="#">Terms of service</a></li><li data-v-628430e3=""><a data-v-628430e3="" href="#">Commision chart</a></li></ul></li></ul></menu><hr data-v-628430e3=""></header><main id="home"><div class="row"><div class="column"><div class="message"><h1>Welcome to my website!</h1></div><hr><div class="contact"><div class="row"><div class="column col-left-30"><img src="home_files/placeholder.png" alt=""></div><div class="column col-right-70"><p>If you like my art</p><p>follow me on:</p><div class="buttons"><button>Twitter</button><button>Instagram</button></div></div></div></div></div><div class="column"><img src="home_files/placeholder.png" alt=""></div></div></main></div>
+    <script type="module" src="home_files/main.js"></script>
+  
+
+</body></html>
