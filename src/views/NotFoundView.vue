@@ -4,3 +4,23 @@
     <p>not found</p>
   </div>
 </template>
+<style lang="css" scoped>
+.error {
+  border: 1px solid black;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error p strong {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.error p {
+  font-size: 40px;
+}
+</style>

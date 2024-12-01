@@ -69,7 +69,9 @@ import { alerts, intro } from '@/components/information/void.js'
             <a href="home"><img src="" alt="yessss" /></a>
           </li>
           <li>
-            <a href="https://www.google.com"><img src="" alt="heck no" /></a>
+            <a href="https://youtu.be/FtutLA63Cp8"
+              ><img src="" alt="heck no"
+            /></a>
           </li>
         </ul>
       </div>

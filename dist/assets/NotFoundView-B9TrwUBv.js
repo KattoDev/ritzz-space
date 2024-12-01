@@ -1,1 +1,0 @@
-import{_ as n,c as t,a as o,o as r}from"./index-BL6CujUh.js";const s={},c={class:"error"};function a(l,e){return r(),t("div",c,e[0]||(e[0]=[o("p",null,[o("strong",null,"404")],-1),o("p",null,"not found",-1)]))}const d=n(s,[["render",a]]);export{d as default};

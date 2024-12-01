@@ -1,9 +1,7 @@
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import 'colors.css';
-@import '/src/assets/css/homePage.css';
-@import '/src/assets/css/aboutPage.css';
-@import '/src/assets/css/NotFoundPage.css';
+
 body {
   background-color: var(--background);
   color: var(--text);

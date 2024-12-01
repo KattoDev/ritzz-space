@@ -4,3 +4,5 @@ export let intro = [
 ]
 
 export let alerts = ['02/11/24', 'Project started']
+
+export const KEY = '5cd721c80abe4ea0261f96e4d675972d'

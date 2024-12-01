@@ -38,3 +38,82 @@ import Placeholder from '@/components/Placeholder.vue'
     </div>
   </main>
 </template>
+
+<style lang="css" scoped>
+#home {
+  width: 100dvw;
+  display: block;
+}
+
+hr {
+  width: 95%;
+}
+
+.row .column .message {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.row {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .column .contact {
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+  height: 150px;
+  background-color: var(--accent);
+  border-radius: 10px 100px 10px 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rebeccapurple;
+}
+
+.row .column .contact .row {
+  width: 100%;
+}
+
+.row .column .contact .col-left-30 {
+  width: 30%;
+}
+
+.row .column .contact .col-right-70 {
+  width: 70%;
+}
+
+#home .contact button {
+  margin: 5px 10px;
+  padding: 5px 15px;
+  border: none;
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 20px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+#home .contact button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+#home .row .column .contact img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+#home .row .column img {
+  height: calc(100dvh - 90px);
+  width: 500px;
+  border-radius: 20px;
+}
+</style>

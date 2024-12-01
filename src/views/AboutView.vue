@@ -29,10 +29,6 @@ import Placeholder from '@/components/Placeholder.vue'
         <div class="contact">
           <ul>
             <li>
-              <img src="/src/assets/images/icons/mail.svg" alt="" />
-              <p>mail@mail.com</p>
-            </li>
-            <li>
               <img src="/src/assets/images/icons/telegram.svg" alt="" />
               <p>@StarlightDreamer56</p>
             </li>
@@ -46,3 +42,80 @@ import Placeholder from '@/components/Placeholder.vue'
     </div>
   </main>
 </template>
+<style lang="css" scoped>
+#about {
+  margin-top: 20px;
+  background-color: transparent;
+  gap: 40px;
+  width: calc(100dvw - 200px);
+  box-shadow: 1px 1px 10px rgb(155, 154, 154);
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-left-60 {
+  width: 60%;
+}
+
+.col-right-40 {
+  width: 40%;
+  margin-top: 50px;
+}
+
+.column img {
+  width: 200px;
+  border-radius: 100%;
+  border: 2px solid var(--accent);
+}
+
+.journey {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journey h1 {
+  margin-bottom: 10px;
+}
+
+.experience {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.experience p {
+  margin-bottom: 10px;
+}
+
+.info {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact {
+  margin-top: 60px;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+
+.contact img {
+  width: 30px;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  font-size: 20px;
+  height: 20px;
+}
+</style>

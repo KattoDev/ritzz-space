@@ -5,13 +5,13 @@ import { status } from './information/commisions'
 <template>
   <menu>
     <ul id="menu-left">
-      <li><a href="about">about</a></li>
+      <li><a href="/about">about</a></li>
     </ul>
     <a href="/home">
-      <h1>RitzzRiver</h1>
+      <img src="../assets/images/signature.png" alt="RitzzRiver" />
     </a>
     <ul id="menu-right">
-      <li><a href="gallery">my works</a></li>
+      <li><a href="/gallery">my works</a></li>
       <li>
         <a href="#"
           >commisions
@@ -34,8 +34,8 @@ import { status } from './information/commisions'
           <li>
             <a href="#">Status: {{ status }}</a>
           </li>
-          <li><a href="commisions/termsOfService">Terms of service</a></li>
-          <li><a href="commisions/chart">Commision chart</a></li>
+          <li><a href="/commisions/termsOfService">Terms of service</a></li>
+          <li><a href="/commisions/chart">Commision chart</a></li>
         </ul>
       </li>
     </ul>
@@ -66,8 +66,8 @@ menu a {
   text-decoration: none;
 }
 
-menu a h1 {
-  font-size: 30px;
+menu a img {
+  width: 90px;
 }
 
 menu ul {
@@ -126,61 +126,4 @@ menu li:hover #sub-menu {
   pointer-events: all;
   top: var(--menu-height);
 }
-/* menu {
-  height: 60px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-  font-size: 30px;
-}
-
-hr {
-  margin: 0;
-}
-menu ul {
-  display: flex;
-  gap: 5px;
-}
-
-menu ul svg {
-  width: 20px;
-  rotate: 0deg;
-  transition: rotate 0.3s ease-in-out;
-}
-
-menu ul li {
-  display: flex;
-  background-color: var(--background);
-  transition:
-    background-color 0.3s ease-in-out,
-    color 0.3s ease-in-out;
-  height: 60px;
-}
-
-menu ul li a {
-  text-decoration: none;
-}
-menu h1 {
-  transform: translate(50%);
-}
-
-menu ul li:hover {
-  background-color: var(--primary);
-}
-menu ul li:hover a {
-  color: var(--background);
-}
-
-menu ul li:hover svg {
-  rotate: 90deg;
-}
-
-menu #menu-right {
-  margin-left: 20px;
-}
-menu #menu-left {
-  margin-right: 20px;
-} */
 </style>
