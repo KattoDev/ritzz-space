@@ -42,6 +42,13 @@ const router = createRouter({
       component: () => import('../views/TosView.vue'),
     },
     {
+      path: '/twd',
+      name: 'tailwind',
+      meta: { title: 'tailwind' },
+      component: () => import('../views/TailwindView.vue'),
+    },
+
+    {
       path: '/:pathMatch(.*)*',
       component: () => import('../views/NotFoundView.vue'),
       meta: { title: '404' },
