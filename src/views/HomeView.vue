@@ -10,18 +10,22 @@ import Placeholder from '@/components/Placeholder.vue'
     <PageHeader />
   </header>
   <main id="home">
-    <div class="row">
-      <div class="column">
+    <div class="tw-bg-[rgba(0,0,0,0.5)] tw-p-3 tw-rounded-2xl tw-flex tw-gap-3">
+      <div class="tw-overflow-hidden tw-w-1/2 tw-break-words">
         <div class="message">
           <h1>{{ message }}</h1>
         </div>
         <hr />
         <div class="contact">
-          <div class="row">
-            <div class="column col-left-30">
+          <div
+            class="tw-bg-[rgba(0,0,0,0.5)] tw-p-3 tw-rounded-2xl tw-flex tw-gap-3"
+          >
+            <div class="tw-overflow-hidden tw-w-1/2 tw-break-words col-left-30">
               <Placeholder />
             </div>
-            <div class="column col-right-70">
+            <div
+              class="tw-overflow-hidden tw-w-1/2 tw-break-words col-right-70"
+            >
               <p>If you like my art</p>
               <p>follow me on:</p>
               <div class="buttons">
@@ -32,7 +36,7 @@ import Placeholder from '@/components/Placeholder.vue'
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="tw-overflow-hidden tw-w-1/2 tw-break-words">
         <Placeholder />
       </div>
     </div>

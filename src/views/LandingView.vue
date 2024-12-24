@@ -5,66 +5,52 @@ import { alerts, intro } from '@/components/information/void.js'
 </script>
 
 <template>
-  <div id="space">
-    <div class="container">
-      <div class="row">
-        <div class="column">
+  <div
+    class="tw-w-dvw tw-h-dvh tw-flex tw-justify-center tw-items-center tw-bg-space"
+  >
+    <div class="container tw-w-[450px] tw-text-white">
+      <div
+        class="tw-bg-[rgba(0,0,0,0.5)] tw-p-3 tw-rounded-2xl tw-flex tw-gap-3"
+      >
+        <div class="tw-overflow-hidden tw-w-1/2 tw-break-words">
           <Placeholder />
-          <div class="status">
+          <div class="tw-flex tw-gap-1 tw-pt-2 tw-justify-center">
             <h6>Commisions Status</h6>
-            <svg
+            <img
               v-if="commisionStatus"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
-            <svg
+              class="tw-w-5"
+              src="../assets/images/icons/check.svg"
+              alt="check"
+            />
+            <img
               v-else
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
+              class="tw-w-5"
+              src="../assets/images/icons/uncheck.svg"
+              alt="uncheck"
+            />
           </div>
         </div>
-        <div class="column">
-          <div id="intro">
+        <div class="tw-overflow-hidden tw-w-1/2 tw-break-words">
+          <div>
             <p>{{ intro[0] }}</p>
             <p>{{ intro[1] }}</p>
           </div>
-          <p class="divider">--------------------------------</p>
-          <div id="info">
+          <p class="tw-text-alert">--------------------------------</p>
+          <div class="tw-flex">
             <p>✨</p>
-            <span> {{ alerts[0] }}</span>
+            <span class="tw-font-bold"> {{ alerts[0] }}</span>
             <p>: {{ alerts[1] }}</p>
           </div>
-          <p class="divider">--------------------------------</p>
-          <h6>
+          <p class="tw-text-alert">--------------------------------</p>
+          <h6 class="tw-font-bold tw-text-amber-900">
             IMPORTANT: this site is under construction, some functions may not
             work as expected
           </h6>
         </div>
       </div>
-      <div id="door">
-        <p>Would you like to enter?</p>
-        <ul id="keys">
+      <div class="tw-m-5 tw-flex tw-flex-col tw-items-center">
+        <p class="tw-text-2xl">Would you like to enter?</p>
+        <ul class="tw-text-xl tw-flex tw-gap-3">
           <li>
             <a href="home"><img src="" alt="yessss" /></a>
           </li>

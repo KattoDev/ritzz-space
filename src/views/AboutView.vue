@@ -11,8 +11,11 @@ import Placeholder from '@/components/Placeholder.vue'
   <main>
     <h1>about me</h1>
 
-    <div class="row" id="about">
-      <div class="column col-left-60">
+    <div
+      class="tw-bg-[rgba(0,0,0,0.5)] tw-p-3 tw-rounded-2xl tw-flex tw-gap-3"
+      id="about"
+    >
+      <div class="tw-overflow-hidden tw-w-1/2 tw-break-words col-left-60">
         <div class="info">
           <p v-for="info in about" :key="info">{{ info }}</p>
         </div>
@@ -23,7 +26,7 @@ import Placeholder from '@/components/Placeholder.vue'
           </div>
         </div>
       </div>
-      <div class="column col-right-40">
+      <div class="tw-overflow-hidden tw-w-1/2 tw-break-words col-right-40">
         <Placeholder />
 
         <div class="contact">
